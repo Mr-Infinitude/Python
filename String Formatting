@@ -1,0 +1,22 @@
+def print_formatted(number):
+    # your code goes here
+    l=len("{0:b}".format(number))
+
+
+    '''
+    The expression l=len("{0:b}".format(number)) calculates the length of the binary representation of a given number and assigns it to the variable l. Here's how it works:
+    
+    "{0:b}".format(number) converts the number to its binary representation as a string. The "{0:b}" is a format specifier that indicates that the first argument (number) should be formatted as a binary string.
+    
+    len() is a built-in Python function that returns the length of a string, list, or any other iterable object. In this case, it calculates the length of the binary string generated in the previous step.
+    
+    The resulting length is then assigned to the variable l.
+    
+    For example, if you have a number number = 42, the expression l = len("{0:b}".format(number)) would evaluate to 6 because the binary representation of 42 is '101010', which has a length of 6'''
+
+
+    for i in range(1,number+1):
+        print("{0:{w}d} {0:{w}o} {0:{w}X} {0:{w}b}" .format(i,w=l))
+if __name__ == '__main__':
+    n = int(input())
+    print_formatted(n)

@@ -1,4 +1,4 @@
-def print_formatted(number):
+def print_format(number):
     # your code goes here
     l=len("{0:b}".format(number))
 
@@ -19,4 +19,4 @@ def print_formatted(number):
         print("{0:{w}d} {0:{w}o} {0:{w}X} {0:{w}b}" .format(i,w=l))
 if __name__ == '__main__':
     n = int(input())
-    print_formatted(n)
+    print_format(n)
